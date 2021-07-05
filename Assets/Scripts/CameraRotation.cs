@@ -10,7 +10,7 @@ public class CameraRotation : MonoBehaviour
     public float speed = 10.0f;
     public float zoom_speed = 1.0f;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         
@@ -18,6 +18,8 @@ public class CameraRotation : MonoBehaviour
 
     public void Moove()
     {
+        
+        Debug.Log(camera.position.z);
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -35,14 +37,17 @@ public class CameraRotation : MonoBehaviour
         {
             camera.RotateAround(target.position, Vector3.down, speed * Time.deltaTime);
         }
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, transform.position.z + zoom_speed, 1));
-
-        }
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, transform.position.z - zoom_speed, 1));
+            if (camera.position.z < 50.0)
+                transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, transform.position.z + zoom_speed, 1));
+            
+
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            if (camera.position.z > 15.0 )
+                transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, transform.position.z - zoom_speed, 1));
 
         }
     }
