@@ -6,20 +6,15 @@ public class PlanetRotation : MonoBehaviour
 {
 
     public Transform target;
-    public float localRotate = 6f;
+    public float rotate = 6.0f;
 
-    void Start()
+    public void DoRotate()
     {
-        
-    }
-
-    public void DoLocalRotate()
-    {
-        transform.Rotate(Vector3.up, localRotate * Time.deltaTime);
+        transform.Rotate(Vector3.up, rotate * Time.deltaTime);
     }
 
     void Update()
     {
-        DoLocalRotate();
+        DoRotate();
     }
 }

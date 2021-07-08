@@ -18,16 +18,15 @@ public class CameraRotation : MonoBehaviour
 
     public void Moove()
     {
-        
-        Debug.Log(camera.position.z);
+        var distance = (camera.position - target.position).sqrMagnitude;
 
         if (Input.GetKey(KeyCode.W))
         {
-            camera.RotateAround(target.position, Vector3.right, speed * Time.deltaTime);
+            camera.RotateAround(target.position, Vector3.left, speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            camera.RotateAround(target.position, Vector3.left, speed * Time.deltaTime);
+            camera.RotateAround(target.position, Vector3.right, speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -39,14 +38,14 @@ public class CameraRotation : MonoBehaviour
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            if (camera.position.z < 50.0)
+            if (distance < 3600.0)
                 transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, transform.position.z + zoom_speed, 1));
             
 
         }
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            if (camera.position.z > 15.0 )
+            if (distance > 900.0 )
                 transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, transform.position.z - zoom_speed, 1));
 
         }

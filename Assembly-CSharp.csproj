@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlanetRotation.cs" />
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
+    <Compile Include="Assets\Scripts\Planet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
