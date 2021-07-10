@@ -8,13 +8,8 @@ public class PlanetRotation : MonoBehaviour
     public Transform target;
     public float rotate = 6.0f;
 
-    public void DoRotate()
-    {
-        transform.Rotate(Vector3.up, rotate * Time.deltaTime);
-    }
-
     void Update()
     {
-        DoRotate();
+        transform.Rotate(0, 0, rotate * Time.deltaTime);
     }
 }
