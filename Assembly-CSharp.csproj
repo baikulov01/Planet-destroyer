@@ -56,12 +56,14 @@
     <Analyzer Include="D:\Programm Files\Visual Studio 2019\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\CanBeDestroyed.cs" />
+    <Compile Include="Assets\Scripts\Rocket.cs" />
     <Compile Include="Assets\Scripts\PlanetRotation.cs" />
     <Compile Include="Assets\Scripts\SetColliders.cs" />
     <Compile Include="Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
-    <Compile Include="Assets\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Scripts\CentreOfMass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

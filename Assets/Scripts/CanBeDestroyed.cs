@@ -7,10 +7,8 @@ public class CanBeDestroyed : MonoBehaviour
     public Transform destroyed;
     
     public void Dead()
-    {
-        
-        Instantiate(destroyed, transform.position, Quaternion.Euler(0, 0, 0));
+    {  
+        Instantiate(destroyed, transform.position, Quaternion.Euler(90, 0, 0));
         Destroy(gameObject);
-        //gameObject.transform.rotation = Quaternion.Euler(0, 0, 40);
     }
 }

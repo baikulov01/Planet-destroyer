@@ -13,8 +13,8 @@ public class SetColliders : MonoBehaviour
         {
             foreach (Transform item in transform)
             {
-                if (item.gameObject.GetComponent<BoxCollider>()==null)
-                    item.gameObject.AddComponent<BoxCollider>();
+                if (item.gameObject.GetComponent<MeshCollider>()==null)
+                    item.gameObject.AddComponent<MeshCollider>().convex=true;
             }
         }
     }
