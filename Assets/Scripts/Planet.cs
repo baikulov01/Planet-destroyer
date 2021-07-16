@@ -27,16 +27,23 @@ public class Planet : MonoBehaviour
     {
         componentRigidbody = GetComponent<Rigidbody>();
 
-
-        foreach (Rigidbody item in affectedBodies)
+        try
         {
-            Vector3 directionToPlanet = (transform.position - item.position).normalized;
+            foreach (Rigidbody item in affectedBodies)
+            {
+                Vector3 directionToPlanet = (transform.position - item.position).normalized;
 
-            float distance = (transform.position - item.position).magnitude;
-            float strength = 9.8f*item.mass * componentRigidbody.mass/Mathf.Pow(distance,2);
-            //float strength = 5.8f * item.mass * componentRigidbody.mass / distance;
+                float distance = (transform.position - item.position).magnitude;
+                float strength = 9.8f * item.mass * componentRigidbody.mass / Mathf.Pow(distance, 2);
+                //float strength = 5.8f * item.mass * componentRigidbody.mass / distance;
 
-            item.AddForce(directionToPlanet * strength);
+                item.AddForce(directionToPlanet * strength);
+            }
         }
+        catch (MissingReferenceException)
+        {
+   
+        }
+        
     }
 }

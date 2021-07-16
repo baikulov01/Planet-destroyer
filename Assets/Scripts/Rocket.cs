@@ -5,17 +5,19 @@ using UnityEngine;
 //[ExecuteInEditMode]
 public class Rocket : MonoBehaviour
 {
-    public float speed = 2.0f;
+    public float speed = 5.0f;
     public Transform physicsExplosion;
 
-    public void Start()
-    {
-        
-    }
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 1.4f)) 
+        transform.LookAt(GameObject.Find("Centre").transform.position);
+        //if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), 1.4f))
+        //{
+        //    Dead();
+        //}
+
+        if ((gameObject.transform.position - GameObject.Find("Centre").transform.position).sqrMagnitude > 10000.0)
         {
             Dead();
         }
@@ -26,6 +28,11 @@ public class Rocket : MonoBehaviour
         
         Instantiate(physicsExplosion,transform.position,transform.rotation);
         Destroy(gameObject);
+    }
+
+    void OnCollisionEnter()
+    {
+        Dead();
     }
     private void OnDrawGizmos()
     {

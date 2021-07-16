@@ -10,11 +10,7 @@ public class CameraRotation : MonoBehaviour
     public float speed = 10.0f;
     public float zoom_speed = 1.0f;
 
-    
-    void Start()
-    {
-        
-    }
+  
 
     public void Moove()
     {

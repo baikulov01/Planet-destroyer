@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CanBeRigidbody
   - ignore
+  - Planet
   layers:
   - Default
   - TransparentFX
