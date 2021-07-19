@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Mars.unity
+    guid: ef3e178f564a0194c8e7b39020f34bef
+  - enabled: 1
+    path: Assets/Scenes/Mercury.unity
+    guid: adaefbc3bbbf5f74abf0845998754654
+  - enabled: 1
+    path: Assets/Scenes/Venera.unity
+    guid: ba408587b37fa994c9cc8c8d2474c12c
   m_configObjects: {}
