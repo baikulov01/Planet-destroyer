@@ -1,0 +1,112 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.13f1 (71691879b7f5) revision 7432472'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1110; Version 2009; 64bit' Language: 'ru' Physical Memory: 8137 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity\Unity\2020.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Unity/UnityProjects/Planet-destroyer
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60414
+Successfully changed project path to: D:/Unity/UnityProjects/Planet-destroyer
+D:/Unity/UnityProjects/Planet-destroyer
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 26.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.13f1 (71691879b7f5)
+[Subsystems] Discovering subsystems at path D:/Unity/Unity/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/UnityProjects/Planet-destroyer/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'D:/Unity/Unity/2020.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Unity/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/Unity/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Unity/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001352 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 26.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.957 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003343 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.914 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1401 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1858.
+Total: 2.019700 ms (FindLiveObjects: 0.122700 ms CreateObjectMapping: 0.037600 ms MarkObjects: 1.734800 ms  DeleteObjects: 0.123600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Planets/MercuryDiePrefab.prefab
+  artifactKey: Guid(577613473b776eb49a79bd825b6f54b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/MercuryDiePrefab.prefab using Guid(577613473b776eb49a79bd825b6f54b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08679dce3d163e3c3ce3b0801d11f9e9') in 0.834023 seconds 
+  Import took 0.877511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Planets/Earth.fbx
+  artifactKey: Guid(260d2564df7db19499188169a413319c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Earth.fbx using Guid(260d2564df7db19499188169a413319c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f975ddefd66a6cd3e0484940820a55') in 0.229978 seconds 
+  Import took 0.232359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Planets/EarthDiePrefab.prefab
+  artifactKey: Guid(e90b78e033a21e2439e40d2035623c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/EarthDiePrefab.prefab using Guid(e90b78e033a21e2439e40d2035623c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de471c5637eaabc24bbe74fe44199d8e') in 0.580940 seconds 
+  Import took 0.628766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Planets/MercuryDie.fbx
+  artifactKey: Guid(e61a6af367e30bd418af8594c41f658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/MercuryDie.fbx using Guid(e61a6af367e30bd418af8594c41f658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7028bbf027082c984dfad41e2c8dc4a5') in 24.849123 seconds 
+  Import took 24.890177 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
