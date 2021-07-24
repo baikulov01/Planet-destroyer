@@ -16,7 +16,7 @@ public class Explosion : MonoBehaviour
             {
                 hitColliders[i].GetComponent<CanBeDestroyed>().Dead();
             }
-            if (hitColliders[i].CompareTag("CanBeRigidbody") /*&& hitColliders[i].GetComponent<Rigidbody>()==null*/)
+            if (hitColliders[i].CompareTag("CanBeRigidbody"))
             {
                 hitColliders[i].gameObject.AddComponent<Rigidbody>();
                 hitColliders[i].attachedRigidbody.mass = 10;

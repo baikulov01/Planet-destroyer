@@ -295,7 +295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 60}
+  m_LocalPosition: {x: 0, y: 0, z: 45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 705507995}
@@ -315,9 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2076057096}
-  camera: {fileID: 963194228}
   speed: 10
-  zoom_speed: 1
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81c2cee70514f04aa6f0d8ce18096c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rocket: {fileID: 8008545390949806196, guid: cdc18e71cc505604390910f6d4d9965a, type: 3}
+  Rocket: {fileID: 2330739976029489829, guid: cdc18e71cc505604390910f6d4d9965a, type: 3}
 --- !u!1 &1288503606 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a54cc5d10673f814b955ec48649887a8, type: 3}

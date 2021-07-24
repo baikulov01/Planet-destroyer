@@ -12,10 +12,6 @@ public class Rocket : MonoBehaviour
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
         transform.LookAt(GameObject.Find("Centre").transform.position);
-        //if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), 1.4f))
-        //{
-        //    Dead();
-        //}
 
         if ((gameObject.transform.position - GameObject.Find("Centre").transform.position).sqrMagnitude > 10000.0)
         {
